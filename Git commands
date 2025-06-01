@@ -1,0 +1,18 @@
+git pull origin main
+git fetch
+git fetch --all
+git status
+
+git stash : to reach back to last changes
+
+if u want to take changes in ur local system
+
+git pull origin main
+git checkout balkishan
+git merge main
+esc--wqthen enter
+
+
+to remove any git repository from the folder : Remove-Item -Recurse -Force .git
+
+ctrl+shift+f to search anything in vs code
