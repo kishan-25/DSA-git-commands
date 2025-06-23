@@ -1,4 +1,4 @@
-// generate all the possible substes of a string
+// generate all the possible subsets of a string
 
 #include <iostream>
 #include <vector>
