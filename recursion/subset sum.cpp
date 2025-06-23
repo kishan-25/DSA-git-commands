@@ -28,3 +28,31 @@ class Solution {
         return ans;
     }
 };
+T.C : O(n * 2^n)
+
+// modified approach
+T.C : O(2^n)
+
+class Solution {
+  public:
+    void subseq(int index, int size, vector<int> arr, vector<int>&ans, int sum)
+    {
+        if(index == size)
+        {
+            ans.push_back(sum);
+            return;
+        }
+        // nhi lena
+        subseq(index+1, size, arr, ans, sum);
+        // lena h
+        subseq(index+1, size, arr, ans, sum + arr[index]);
+    }
+    vector<int> subsetSums(vector<int>& arr) {
+        // code here
+        vector<int> ans;
+        int sum = 0;
+        subseq(0, arr.size(), arr, ans, sum);
+        return ans;
+    }
+};
+
