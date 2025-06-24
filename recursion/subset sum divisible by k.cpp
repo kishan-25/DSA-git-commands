@@ -6,7 +6,7 @@ class Solution {
         {
             int sum = 0;
             for(int i = 0; i < temp.size() ; i++)
-            {
+            { 
                 sum += temp[i];
             }
             if(sum % k == 0)
