@@ -2,6 +2,8 @@ nums[2,3,2]
 
 phele 2,3 ka nikal lo and then 3, 2 ka nikal lo or jo maximum h use return kr do kyoki circular h array 
 
+or optimize krne ke time dono ki alg alg dp banalena
+
 class Solution {
 public:
     int find(int index, int size, vector<int>& nums)
