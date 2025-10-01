@@ -4,14 +4,14 @@ public:
         // string word = "a";
         // for(int i=0;i<operations.size();i++)
         // {
-        //     if(operations[i] == 0)
+        //     if(operations[i] == 0)   
         //     {
         //         string str = word;
         //         word += str;
         //     }
         //     else if(operations[i] == 1)
         //     {
-        //         string str = "";
+        //         string str =      
         //         for(int i=0;i<word.size();i++)
         //         {
         //             if(word[i] == 'z')
@@ -31,7 +31,7 @@ public:
         for (int op : operations) {
             len *= 2;
             lengths.push_back(len);
-            if (len >= k) break;
+            if (len >= k) break;    
         }
 
         for (int i = lengths.size() - 1; i >= 0; --i) {
@@ -46,3 +46,4 @@ public:
         return (char)((('a' - 'a' + shift) % 26) + 'a');
     }
 };
+
