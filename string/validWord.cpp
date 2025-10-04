@@ -8,7 +8,7 @@ public:
         bool hasConsonant = false;
         for(auto ch : s)
         {
-            char c = tolower(ch);
+            char c = tolower(ch);   
             if(isalpha(c))
             {
                 if(c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u')
@@ -16,13 +16,13 @@ public:
                     hasVowel = true;
                 }else{
                     hasConsonant = true;
-                }
+                }   
             }
             else if(!isdigit(c))
             {
                 return false;
-            }
+            }   
         }
-        return hasVowel && hasConsonant;
-    }
+        return hasVowel && hasConsonant;   
+    }   
 };
